@@ -38,8 +38,13 @@ int main() {
 		erase();
 
 		mvaddstr(posY, posX, "*");
-		mvaddstr(posY, posX, "&");
-		usleep(100000);
+		mvaddstr(foodY, foodX, "&");
+		if (foodX == posX && foodY == posY) {
+			foodX = rand() % 20;
+			foodY = rand() % 20;
+		}
+
+		usleep(200000);
 
 
 	}
