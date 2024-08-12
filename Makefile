@@ -24,4 +24,4 @@ run:
 	./bin/$(OUT_FILE)
 
 clean veryclean:
-	@rm -f bin/*
+	rm -f bin/**
